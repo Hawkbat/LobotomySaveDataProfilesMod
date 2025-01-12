@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <info>
-	<name>Save Profiles</name>
+	<name>Save Data Profiles</name>
 	<descs>
-		<desc>Keep multiple separate game saves and switch between them on the fly.
+		<desc>Create and switch between multiple separate save files in-game.
 
 Author: Hawkbar
 		</desc>

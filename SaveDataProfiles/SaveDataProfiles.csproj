@@ -92,6 +92,7 @@
     <Content Include="Info\en\Info.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="SaveDataProfiles.csproj.user" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig">
