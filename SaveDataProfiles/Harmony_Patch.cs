@@ -13,7 +13,7 @@ namespace SaveDataProfiles
     {
         public static string GetCurrentSavePath()
         {
-            return SaveDataProfilesManager.instance.currentSavePath;
+            return SaveDataProfilesManager.instance.currentProfileSavePath;
         }
 
         public Harmony_Patch()
