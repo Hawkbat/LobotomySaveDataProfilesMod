@@ -151,13 +151,15 @@ namespace SaveDataProfiles
 
         void OnGUI()
         {
-            if (NewTitleScript.instance == null) return;
+            if (NewTitleScript.instance == null && AlterTitleController.Controller == null) return;
             if (CreatureInfoWindow.CurrentWindow != null && CreatureInfoWindow.CurrentWindow.IsEnabled) return;
             if (OptionUI.Instance != null && OptionUI.Instance.IsEnabled) return;
             if (GlobalGameManager.instance.loadingScreen.isLoading) return;
-            if (NewTitleScript.instance.GetField<bool>("isNewGame")) return;
+            if (NewTitleScript.instance != null && NewTitleScript.instance.GetField<bool>("isNewGame")) return;
 
-            GUILayout.BeginArea(new Rect(Screen.width / 2f, 0f, Screen.width / 2f, Screen.height));
+            var leftSide = AlterTitleController.Controller != null;
+
+            GUILayout.BeginArea(new Rect(leftSide ? 0f : Screen.width / 2f, 0f, Screen.width / 2f, Screen.height));
             GUILayout.BeginVertical();
             GUILayout.FlexibleSpace();
             GUILayout.BeginHorizontal();
